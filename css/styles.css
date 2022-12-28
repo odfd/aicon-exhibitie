@@ -11320,7 +11320,7 @@ html {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
+  padding-top: calc(2rem + 72px);
   padding-bottom: 7rem;
   background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
   background-repeat: no-repeat;
@@ -11371,7 +11371,7 @@ header.masthead .bg-circle-4 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(10rem + 55px);
+    padding-top: calc(8rem + 25px);
     padding-bottom: 10rem;
   }
   header.masthead .masthead-content .masthead-heading {
@@ -11380,4 +11380,15 @@ header.masthead .bg-circle-4 {
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
   }
+}
+
+/* Reset */
+*:before, *:after { content: ''; }
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
