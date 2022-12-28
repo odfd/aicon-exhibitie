@@ -11371,7 +11371,7 @@ header.masthead .bg-circle-4 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(8rem + 25px);
+    padding-top: calc(4rem + 25px);
     padding-bottom: 10rem;
   }
   header.masthead .masthead-content .masthead-heading {
@@ -11393,19 +11393,32 @@ hr {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-@media (max-width: 575.98px) {
-  .table-responsive-sm {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+@media (max-width: 767.98px) {  
+  .p-5{
+    padding: 2rem !important;
   }
+  .px-5 {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+  .gx-5 {
+    --bs-gutter-x: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
   .p-5{
     padding: 1.5rem !important;
   }
   .px-5 {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
   }
   .gx-5 {
-    --bs-gutter-x: 1rem;
+    --bs-gutter-x: 1.5rem;
   }
 }
+
+header.masthead {
+    padding-top: calc(1rem + 49px) !important;
+  }
